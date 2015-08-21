@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!-- To change this license header, choose License Headers in Project Properties. 
+	To change this template file, choose Tools | Templates and open the template 
+	in the editor. -->
+
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.tc.epam.com/Plane" xmlns="http://www.tc.epam.com/Plane"
+           elementFormDefault="qualified">
+
+    <xs:element name="Plane" type="root_plane_type"/>
+
+    <xs:complexType name="root_plane_type">
+        <xs:sequence>
+            <xs:element name="aircraft" maxOccurs="unbounded" type="plane_element_type"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="plane_element_type">
+        <xs:sequence>
+            <xs:element name="characteristics" type="characteristics_type"/>
+            <xs:element name="measurements" type="measurements_type"/>
+            <xs:element name="price" type="price_type"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="plane_id_type" use="required"/>
+        <xs:attribute name="model" type="plane_model_type" use="required"/>
+        <xs:attribute name="origin" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="plane_id_type">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="p\-[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="plane_model_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\w\-\s]{0,20}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="characteristics_type">
+        <xs:sequence>
+            <xs:element name="type" type="plane_type_enum_type"/>
+            <xs:element name="crew" type="crew_type"/>
+            <xs:element name="loadout" type="loadout_type" minOccurs="0"/>
+            <xs:element name="radar" type="xs:boolean" default="false"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="plane_type_enum_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Support"/>
+            <xs:enumeration value="Escort"/>
+            <xs:enumeration value="Fighter"/>
+            <xs:enumeration value="Interceptor"/>
+            <xs:enumeration value="Recon"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="crew_type">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="loadout_type">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="16"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="measurements_type">
+        <xs:attribute name="height" type="measurement_type" use="required"/>
+        <xs:attribute name="width" type="measurement_type" use="required"/>
+        <xs:attribute name="length" type="measurement_type" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="measurement_type">
+        <xs:restriction base="xs:double">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="price_type">
+        <xs:attribute name="cost" type="xs:positiveInteger" use="required"/>
+        <xs:attribute name="currency" type="xs:string" use="required" fixed="TL">
+        </xs:attribute>
+    </xs:complexType>
+
+</xs:schema>
+

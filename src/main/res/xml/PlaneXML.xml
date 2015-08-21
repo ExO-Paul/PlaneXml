@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="PlaneStylesheet.xsl"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<pl:Plane
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns:pl='http://www.tc.epam.com/Plane'
+        xsi:schemaLocation='http://www.tc.epam.com/Plane PlaneXMLSchema.xsd'>
+    <pl:aircraft id="p-0001" model="Rafale" origin="France">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>6</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="5.3" width="10.9" length="15.3"/>
+        <pl:price cost="75000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0002" model="U-2" origin="US">
+        <pl:characteristics>
+            <pl:type>Recon</pl:type>
+            <pl:crew>2</pl:crew>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.9" width="24.38" length="15.09"/>
+        <pl:price cost="80000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0003" model="SU-27" origin="USSR">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>10</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="5.2" width="12.7" length="18.5"/>
+        <pl:price cost="80000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0004" model="DH Vampire" origin="GB">
+        <pl:characteristics>
+            <pl:type>Interceptor</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>6</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.5" width="10.8" length="13.0"/>
+        <pl:price cost="50000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0005" model="Meteor mkIII" origin="GB">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.3" width="11.33" length="9.6"/>
+        <pl:price cost="45000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0006" model="MIG-15" origin="USSR">
+        <pl:characteristics>
+            <pl:type>Interceptor</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.7" width="10.08" length="10.10"/>
+        <pl:price cost="50000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0007" model="MIG-17" origin="USSR">
+        <pl:characteristics>
+            <pl:type>Interceptor</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.8" width="9.6" length="11.1"/>
+        <pl:price cost="55000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0008" model="F-86A5 Sabre" origin="US">
+        <pl:characteristics>
+            <pl:type>Escort</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>16</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.0" width="10.1" length="12.1"/>
+        <pl:price cost="60000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0009" model="F9F Panther" origin="US">
+        <pl:characteristics>
+            <pl:type>Support</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>6</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.45" width="11.58" length="11.35"/>
+        <pl:price cost="60000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0010" model="F-84 Thunderjet" origin="US">
+        <pl:characteristics>
+            <pl:type>Support</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>8</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.84" width="11.09" length="11.7"/>
+        <pl:price cost="55000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0011" model="Me-262 Schwalbe" origin="Germany">
+        <pl:characteristics>
+            <pl:type>Interceptor</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>12</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.8" width="12.51" length="10.7"/>
+        <pl:price cost="45000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0012" model="He-162 Salamander" origin="Germany">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="2.6" width="7.2" length="9.05"/>
+        <pl:price cost="30000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0013" model="FA-18" origin="US">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>2</pl:crew>
+            <pl:loadout>6</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.66" width="11.43" length="17.1"/>
+        <pl:price cost="80000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0014" model="Harrier JumpJet" origin="GB">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>6</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.76" width="7.7" length="14.2"/>
+        <pl:price cost="85000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0015" model="R2Y Keiun Kai" origin="Japan">
+        <pl:characteristics>
+            <pl:type>Interceptor</pl:type>
+            <pl:crew>2</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.24" width="14" length="13.05"/>
+        <pl:price cost="50000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0016" model="Ki-201 Karyu" origin="Japan">
+        <pl:characteristics>
+            <pl:type>Support</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>0</pl:loadout>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="3.96" width="13.68" length="11.48"/>
+        <pl:price cost="40000" currency="TL"/>
+    </pl:aircraft>
+   <pl:aircraft id="p-0017" model="Saab-39 Gripen" origin="Sweden">
+       <pl:characteristics>
+           <pl:type>Fighter</pl:type>
+           <pl:crew>1</pl:crew>
+           <pl:loadout>6</pl:loadout>
+           <pl:radar>true</pl:radar>
+       </pl:characteristics>
+       <pl:measurements height="4.5" width="8.4" length="14.1"/>
+       <pl:price cost="85000" currency="TL"/>
+   </pl:aircraft>
+    <pl:aircraft id="p-0018" model="SR-71 Blackbird" origin="US">
+        <pl:characteristics>
+            <pl:type>Recon</pl:type>
+            <pl:crew>2</pl:crew>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="5.64" width="16.94" length="32.74"/>
+        <pl:price cost="120000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0019" model="Ar-234" origin="Germany">
+        <pl:characteristics>
+            <pl:type>Recon</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:radar>false</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.3" width="14.1" length="12.63"/>
+        <pl:price cost="45000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0020" model="SU-25" origin="USSR">
+        <pl:characteristics>
+            <pl:type>Support</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>8</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.8" width="14.36" length="15.36"/>
+        <pl:price cost="80000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0021" model="SU-35" origin="Russia">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>10</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="5.9" width="14.75" length="21.9"/>
+        <pl:price cost="90000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0022" model="T-50" origin="Russia">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>8</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="4.8" width="14.0" length="19.7"/>
+        <pl:price cost="110000" currency="TL"/>
+    </pl:aircraft>
+    <pl:aircraft id="p-0023" model="F22 Raptor" origin="US">
+        <pl:characteristics>
+            <pl:type>Fighter</pl:type>
+            <pl:crew>1</pl:crew>
+            <pl:loadout>8</pl:loadout>
+            <pl:radar>true</pl:radar>
+        </pl:characteristics>
+        <pl:measurements height="5.09" width="13.56" length="18.9"/>
+        <pl:price cost="100000" currency="TL"/>
+    </pl:aircraft>
+</pl:Plane>
+
